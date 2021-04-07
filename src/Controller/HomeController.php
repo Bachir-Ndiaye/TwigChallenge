@@ -11,14 +11,16 @@ namespace App\Controller;
 
 class HomeController extends AbstractController
 {
-    /**
-     * Display home page
-     *
-     * @return string
-     * @throws \Twig\Error\LoaderError
-     * @throws \Twig\Error\RuntimeError
-     * @throws \Twig\Error\SyntaxError
-     */
+    public function showProducts()
+    {
+        $products = ['Guitar', 'Bass', 'Drum', 'Keyboard', 'Pedals'];
+        return $this->twig->render('products.html.twig',[
+            'products' => $products
+        ]);
+
+    }
+
+
     public function index()
     {
         return $this->twig->render('Home/index.html.twig');

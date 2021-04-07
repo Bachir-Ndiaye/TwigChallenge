@@ -1,0 +1,12 @@
+#prod{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#single-prod{
+    display:inline-block;
+    width: 200px;
+    height: auto;
+    padding: .5rem 0;
+}

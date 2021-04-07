@@ -1,0 +1,10 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+<div id="prod">
+    {% for product in products %}
+        <div id="single-prod">{{ product}}</div>
+    {% endfor %}
+    </div>
+    {{dump(products)}}
+{% endblock %}
